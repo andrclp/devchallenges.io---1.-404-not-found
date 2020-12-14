@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>404 Not Found</title>
+
+	<style>
+		body {
+			font-family: 'Space Mono', monospace;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.page-width {
+			max-width: 1260px;
+			margin: 0 auto;
+			padding: 24px;
+		}
+
+		.hero {
+			display: grid;
+			margin: 48px 0;
+		}
+
+		.hero > * {
+			padding: 24px;
+		}
+
+		.title {
+			font-size: 48px;
+			line-height: 71px;
+			color: #333;
+		}
+
+		.paragraph {
+			font-size: 18px;
+			line-height: 26px;
+			color: #4F4F4F;
+			max-width: 380px;
+		}
+
+		.action {
+			margin-top: 82px;
+		}
+
+		.button {
+			background-color: #333;
+			text-decoration: none;
+			padding: 24px 44px;
+			font-size: 14px;
+			color: white;
+			border: 1px solid transparent;
+			transition: .3s cubic-bezier(0.6, -0.28, 0.735, 0.045) all;
+		}
+
+		.button:hover {
+			background-color: #fff;
+			color: #333;
+			border-color: #333;
+			box-shadow: 3px 3px 1px 0px #ff6d5a;
+		}
+
+		@media (min-width: 760px) {
+			.hero {
+				grid-template-columns: 1fr 1fr;
+				align-items: center;
+			}
+
+			.title {
+				font-size: 64px;
+				line-height: 94px;
+			}
+
+			.paragraph {
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
+
+		.footer-copy {
+			text-align: center;
+			margin-top: 48px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<section class="page-width">
+
+		<header>
+			<h1>404 NOT FOUND</h1>
+		</header>
+
+		<div class="hero">
+			<div>
+				<img class="hero--img" src="Scarecrow.png" alt="">
+			</div>
+			<div>
+				<h1 class="title">I have bad news for you</h1>
+				<p class="paragraph">The page you aer looking, might be remove or is temparily unavailable.</p>
+				<div class="action">
+					<a class="button" href="/">BACK TO HOMEPAGE</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer-copy">
+		Andrei C @ DevChallenges.io
+	</section>
+
+</body>
+
+</html>
